@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hst.codegenerator.dao.SalesPromotionMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hst.codegenerator.entity.SalesPromotion">
+        <id column="id" property="id" />
+        <result column="activity_code" property="activityCode" />
+        <result column="activity_name" property="activityName" />
+        <result column="activity_organization" property="activityOrganization" />
+        <result column="activity_type" property="activityType" />
+        <result column="activity_time_start" property="activityTimeStart" />
+        <result column="activity_time_end" property="activityTimeEnd" />
+        <result column="activity_week_days" property="activityWeekDays" />
+        <result column="activity_status" property="activityStatus" />
+        <result column="is_del" property="isDel" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, activity_code, activity_name, activity_organization, activity_type, activity_time_start, activity_time_end, activity_week_days, activity_status, is_del
+    </sql>
+
+</mapper>
