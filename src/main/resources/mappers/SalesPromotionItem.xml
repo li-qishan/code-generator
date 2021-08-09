@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hst.codegenerator.dao.SalesPromotionItemMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.hst.codegenerator.entity.SalesPromotionItem">
+        <id column="id" property="id" />
+        <result column="activity_code" property="activityCode" />
+        <result column="activity_type" property="activityType" />
+        <result column="material_bar_code" property="materialBarCode" />
+        <result column="material_bar_code_a" property="materialBarCodeA" />
+        <result column="material_bar_code_b" property="materialBarCodeB" />
+        <result column="material_name" property="materialName" />
+        <result column="material_name_a" property="materialNameA" />
+        <result column="material_name_b" property="materialNameB" />
+        <result column="amount_a" property="amountA" />
+        <result column="amount_b" property="amountB" />
+        <result column="full_purchase_m" property="fullPurchaseM" />
+        <result column="price" property="price" />
+        <result column="promot_price" property="promotPrice" />
+        <result column="promot_dis" property="promotDis" />
+        <result column="buy_again_dis" property="buyAgainDis" />
+        <result column="full_minus_m" property="fullMinusM" />
+        <result column="deduction_m" property="deductionM" />
+        <result column="deduction_dis" property="deductionDis" />
+        <result column="effective_rules" property="effectiveRules" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, activity_code, activity_type, material_bar_code, material_bar_code_a, material_bar_code_b, material_name, material_name_a, material_name_b, amount_a, amount_b, full_purchase_m, price, promot_price, promot_dis, buy_again_dis, full_minus_m, deduction_m, deduction_dis, effective_rules
+    </sql>
+
+</mapper>
